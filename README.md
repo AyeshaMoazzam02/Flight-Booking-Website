@@ -1,0 +1,3 @@
+This project is a user-friendly flight booking website designed to simplify the process of searching for and booking flights. Developed using HTML, CSS, and Media Query for the frontend, and PHP for the backend, this website offers a seamless experience for users looking to book flights for their travels. The interface is intuitive and responsive, ensuring compatibility across various devices and screen sizes.
+This website consists of four key pages that collectively form an engaging and informative platform. Each page serves a distinct purpose, catering to the needs of visitors and providing them with valuable information and services. Let's delve into the specifics of each
+page and explore how they contribute to the overall user experience.
