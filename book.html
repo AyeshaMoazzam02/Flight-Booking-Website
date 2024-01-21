@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <!-- header section starts-->
+    <section class="header">
+        <a href="assign1.html" class="logo">Travel.</a>
+        <nav class="navbar">
+            <a href="assign1.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="package.html">Package</a>
+            <a href="book.html">Book</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+     <!--Header section ends-->
+
+    <div class="heading" style="background: url(book.jpg);">
+        <h1 class="heading-title">Book Now</h1>
+    </div>
+
+    <section class="booking">
+        <h1 class="heading-title">Book your trip!</h1>
+        <form action="book_form.php" method="POST" class= "book-form">
+           <div class="flex">
+
+            <div class="inputbox">
+                <span>name: </span>
+                <input type="text" placeholder="Enter your name" name="name">
+             </div>
+
+             <div class="inputbox">
+                <span>Email: </span>
+                <input type="email" placeholder="Enter your email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+            </div>
+
+            <div class="inputbox">
+                <span>Phone: </span>
+                <input type="number" placeholder="Enter your number" name="phone">
+            </div>
+
+            <div class="inputbox">
+                <span>Address: </span>
+                <input type="text" placeholder="Enter your Address" name="address">
+            </div>
+
+            <div class="inputbox">
+                <span>Class </span>
+                <input type="text" list="class" name="class" placeholder="Business"/>
+                    <datalist id="class">
+                        <option value="Business">Business</option>
+                        <option value="First Class">First Class</option>
+                        <option value="Economy Class">Economy Class</option>
+                    </datalist>
+
+            </div>
+
+             <div class="inputbox">
+                <span>Passengers </span>
+                <input type="text" list="passengers" name="passengers" placeholder="How Many?"/>
+                    <datalist id="passengers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </datalist>
+            </div>
+
+            <div class="inputbox">
+                <span>To</span>
+                <input type="text" list="to" name="to" placeholder="Enter City"/>
+                    <datalist id="to">
+                        <option value="Islamabad">
+                        <option value="Karachi">
+                        <option value="Lahore">
+                        <option value="Hong kong">
+                        <option value="Sydney">
+                    </datalist>
+            </div>
+
+            <div class="inputbox">
+                <span>From </span>
+                <input type="text" list="from" name="from" placeholder="Enter City"/>
+                    <datalist id="from">
+                        <option value="Islamabad">
+                            <option value="Karachi">
+                            <option value="Lahore">
+                            <option value="Hong kong">
+                            <option value="Sydney">
+                    </datalist>
+            </div>
+
+            <div class="inputbox">
+                <span>Preferred Airline</span>
+                <input type="text" list="airline" name="airline" placeholder="Airline"/>
+                    <datalist id="airline">
+                        <option value="PIA">PIA</option>
+                        <option value="Air Blue">Air Blue</option>
+                        <option value="Emirates">Emirates</option>
+                    </datalist>
+            </div>
+
+            <div class="inputbox">
+                <span>Date: </span>
+                <input type="date" name="date">
+            </div>
+
+           </div>
+           <input type="submit" value="submit" class="btn" name="send">
+        </form>
+    </section>
+
+    <!-- Footer Section starts-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="home.html"><i class="fas fa-angle-right"></i>Home</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i>About</a>
+                <a href="package.html"><i class="fas fa-angle-right"></i>Package</a>
+                <a href="book.html"><i class="fas fa-angle-right"></i>Book</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i>Ask Questions</a>
+                <a href="#"><i class="fas fa-angle-right"></i>About us</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Terms of use</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+                <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
+                <a href="#"><i class="fas fa-envelope"></i>abcd@gmail.com</a>
+                <a href="#"><i class="fas fa-map"></i>Islamabad, Pakistand, 45710</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+        </div>
+        <div class="credit">created by <span> mr. web designer</span> | all rights reserved!</div>
+    </section>
+
+   <!-- Footer Section ends-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        let menu = document.querySelector('#menu-btn');
+        let navbar = document.querySelector('.header .navbar');
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<style>
+    /* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e3f2fd;
+}
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+.slide p {
+  text-align: center;
+  padding: 0 160px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.slide .quote-icon {
+  font-size: 30px;
+  color: #4070f4;
+}
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+</style>
+<body>
+    <!-- header section starts-->
+    <section class="header">
+        <a href="assign1.html" class="logo">Travel.</a>
+        <nav class="navbar">
+            <a href="assign1.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="package.html">Package</a>
+            <a href="book.html">Book</a>
+        </nav>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+    <!-- Header section ends-->
+
+    <div class="heading" style="background: url(about1.jpg);">
+        <h1>About us</h1>
+    </div>
+
+    <!-- about section start  -->
+    
+    <section class="about">
+        <div class="image">
+            <img src="about2.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>Why choose us?</h3>
+            <p>Travel.com’s mission is to make it easier for everyone to experience the world. By investing in the technology that helps take the friction out of travel, Booking.com seamlessly connects millions of travellers with memorable experiences, a range of transport options and incredible places to stay - from homes to hotels and much more. As one of the world’s largest travel marketplaces for both established brands and entrepreneurs of all sizes, Travel.com enables properties all over the world to reach a global audience and grow their businesses. Travel.com is available in 43 languages and offers more than 28 million total reported accommodation listings, including over 6.6 million listings alone of homes, apartments and other unique places to stay. No matter where you want to go or what you want to do, Booking.com makes it easy and backs it all up with 24/7 customer support.
+                Travel.com is available in 43 languages and offers more than 28 million total reported accommodation listings, including over 6.6 million listings alone of homes, apartments and other unique places to stay. No matter where you want to go or what you want to do, Booking.com makes it easy and backs it all up with 24/7 customer support
+            </p>
+                <div class="icons-container">
+                <div class="icons">
+                 <i class="fa fa-map"></i>
+                 <span>Top destinations</span>
+                </div>
+    
+                <div class="icons">
+                 <i class="fa fa-hand-holding-usd"></i>
+                 <span>Affordable Price</span>
+                </div>
+    
+                <div class="icons">
+                 <i class="fa fa-headset"></i>
+                 <span>24/7 Guide service</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--about section ends-->
+
+    <!--review section starts
+
+    <section class="reviews">
+        <h1 class="heading-title">Client Reviews</h1>
+        <div class="reviews-slider">
+            <div class="W">
+
+                <div class="slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi corrupti enim saepe, consectetur cupiditate, nostrum a ipsam animi quidem consequatur, dolorum vel vitae cum quibusdam fugiat sint itaque magnam molestias.</p>
+                    <h3>John deo</h3>
+                    <span> traveller</span>
+                    <img src="">
+                </div>
+
+                <div class="slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi corrupti enim saepe, consectetur cupiditate, nostrum a ipsam animi quidem consequatur, dolorum vel vitae cum quibusdam fugiat sint itaque magnam molestias.</p>
+                    <h3>John deo</h3>
+                    <span> traveller</span>
+                    <img src="">
+                </div>
+
+                <div class="slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi corrupti enim saepe, consectetur cupiditate, nostrum a ipsam animi quidem consequatur, dolorum vel vitae cum quibusdam fugiat sint itaque magnam molestias.</p>
+                    <h3>John deo</h3>
+                    <span> traveller</span>
+                    <img src="">
+                </div>
+
+                <div class="slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi corrupti enim saepe, consectetur cupiditate, nostrum a ipsam animi quidem consequatur, dolorum vel vitae cum quibusdam fugiat sint itaque magnam molestias.</p>
+                    <h3>John deo</h3>
+                    <span> traveller</span>
+                    <img src="">
+                </div>
+
+                <div class="slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi corrupti enim saepe, consectetur cupiditate, nostrum a ipsam animi quidem consequatur, dolorum vel vitae cum quibusdam fugiat sint itaque magnam molestias.</p>
+                    <h3>John deo</h3>
+                    <span> traveller</span>
+                    <img src="">
+                </div>
+
+                <div class="slide">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nemo est magni iusto quam dignissimos voluptate a provident. Eligendi, delectus. ipsum dolor sit amet consectetur, adipisicing elit. Quasi corrupti enim saepe, consectetur cupiditate, nostrum a ipsam animi quidem consequatur, dolorum vel vitae cum quibusdam fugiat sint itaque magnam molestias.</p>
+                    <h3>John deo</h3>
+                    <span> traveller</span>
+                    <img src="">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+ 
+    review section starts-->
+    <section class="container">
+        <div class="testimonial mySwiper">
+          <div class="testi-content swiper-wrapper">
+            <div class="slide swiper-slide">
+              <img src="#" alt="" class="image" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                saepe provident dolorem a quaerat quo error facere nihil deleniti
+                eligendi ipsum adipisci, fugit, architecto amet asperiores
+                doloremque deserunt eum nemo.
+              </p>
+              <i class="bx bxs-quote-alt-left quote-icon"></i>
+              <div class="details">
+                <span class="name">Marnie Lotter</span>
+                <span class="job">Web Developer</span>
+              </div>
+            </div>
+            <div class="slide swiper-slide">
+              <img src="#" alt="" class="image" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                saepe provident dolorem a quaerat quo error facere nihil deleniti
+                eligendi ipsum adipisci, fugit, architecto amet asperiores
+                doloremque deserunt eum nemo.
+              </p>
+              <i class="bx bxs-quote-alt-left quote-icon"></i>
+              <div class="details">
+                <span class="name">Marnie Lotter</span>
+                <span class="job">Web Developer</span>
+              </div>
+            </div>
+            <div class="slide swiper-slide">
+              <img src="#" alt="" class="image" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                saepe provident dolorem a quaerat quo error facere nihil deleniti
+                eligendi ipsum adipisci, fugit, architecto amet asperiores
+                doloremque deserunt eum nemo.
+              </p>
+              <i class="bx bxs-quote-alt-left quote-icon"></i>
+              <div class="details">
+                <span class="name">Marnie Lotter</span>
+                <span class="job">Web Developer</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next nav-btn"></div>
+          <div class="swiper-button-prev nav-btn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+
+
+    <!-- Footer Section starts-->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="home.html"><i class="fas fa-angle-right"></i>Home</a>
+                <a href="about.html"><i class="fas fa-angle-right"></i>About</a>
+                <a href="package.html"><i class="fas fa-angle-right"></i>Package</a>
+                <a href="book.html"><i class="fas fa-angle-right"></i>Book</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i>Ask Questions</a>
+                <a href="#"><i class="fas fa-angle-right"></i>About us</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Privacy Policy</a>
+                <a href="#"><i class="fas fa-angle-right"></i>Terms of use</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+                <a href="#"><i class="fas fa-phone"></i>+111-222-3333</a>
+                <a href="#"><i class="fas fa-envelope"></i>abcd@gmail.com</a>
+                <a href="#"><i class="fas fa-map"></i>Islamabad, Pakistand, 45710</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            </div>
+        </div>
+        <div class="credit">created by <span> mr. web designer</span> | all rights reserved!</div>
+    </section>
+
+    <!-- Footer Section ends-->
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        let menu = document.querySelector('#menu-btn');
+        let navbar = document.querySelector('.header .navbar');
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        }
+
+
+
+
+        var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+    </script>
+</body>
+</html>
